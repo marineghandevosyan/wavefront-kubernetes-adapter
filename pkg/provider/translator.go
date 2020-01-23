@@ -13,7 +13,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
 
-	wave "github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/client"
+	wave "github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/client"
 )
 
 type Translator interface {

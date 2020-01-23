@@ -1,4 +1,4 @@
-module github.com/wavefronthq/wavefront-kubernetes-adapter
+module github.com/marineghandevosyan/wavefront-kubernetes-adapter
 
 go 1.13
 

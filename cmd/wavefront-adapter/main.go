@@ -30,8 +30,8 @@ import (
 	basecmd "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/cmd"
 	customprovider "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
 
-	"github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/client"
-	"github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/provider"
+	"github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/client"
+	"github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/provider"
 )
 
 var (

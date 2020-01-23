@@ -3,7 +3,7 @@ package provider
 import (
 	"fmt"
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
-	"github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/client"
+	"github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/client"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"

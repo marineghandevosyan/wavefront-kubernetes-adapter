@@ -2,7 +2,7 @@ dist: xenial
 language: go
 
 # workaround for case sensitive build issues with wavefrontHQ
-go_import_path: github.com/wavefronthq/wavefront-kubernetes-adapter
+go_import_path: github.com/marineghandevosyan/wavefront-kubernetes-adapter
 
 go:
   - "1.13.x"

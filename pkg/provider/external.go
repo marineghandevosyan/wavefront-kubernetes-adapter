@@ -2,7 +2,7 @@ package provider
 
 import (
 	"github.com/golang/glog"
-	"github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/config"
+	"github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/config"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"os"
 	"sync"

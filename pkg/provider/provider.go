@@ -18,7 +18,7 @@ import (
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
 	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider/helpers"
 
-	wave "github.com/wavefronthq/wavefront-kubernetes-adapter/pkg/client"
+	wave "github.com/marineghandevosyan/wavefront-kubernetes-adapter/pkg/client"
 )
 
 type wavefrontProvider struct {

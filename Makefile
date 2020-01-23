@@ -1,6 +1,6 @@
 ARCH?=amd64
 OUT_DIR?=./_output
-DOCKER_REPO=wavefronthq
+DOCKER_REPO=marineghandevosyan
 DOCKER_IMAGE=wavefront-hpa-adapter
 
 VERSION=0.9.3
@@ -40,9 +40,9 @@ lint:
 
 container:
 	# Run build in a container in order to have reproducible builds
-	docker run --rm -v $(TEMP_DIR):/build -v $(REPO_DIR):/go/src/github.com/wavefronthq/wavefront-kubernetes-adapter -w /go/src/github.com/wavefronthq/wavefront-kubernetes-adapter golang:$(GOLANG_VERSION) /bin/bash -c "\
+	docker run --rm -v $(TEMP_DIR):/build -v $(REPO_DIR):/go/src/github.com/marineghandevosyan/wavefront-kubernetes-adapter -w /go/src/github.com/marineghandevosyan/wavefront-kubernetes-adapter golang:$(GOLANG_VERSION) /bin/bash -c "\
 		cp /etc/ssl/certs/ca-certificates.crt /build \
-		&& GOARCH=$(ARCH) CGO_ENABLED=0 go build -ldflags \"$(LDFLAGS)\" -a -tags netgo -o /build/$(BINARY_NAME) github.com/wavefronthq/wavefront-kubernetes-adapter/cmd/wavefront-adapter/"
+		&& GOARCH=$(ARCH) CGO_ENABLED=0 go build -ldflags \"$(LDFLAGS)\" -a -tags netgo -o /build/$(BINARY_NAME) github.com/marineghandevosyan/wavefront-kubernetes-adapter/cmd/wavefront-adapter/"
 
 	cp deploy/Dockerfile $(TEMP_DIR)
 	docker build --pull -t $(DOCKER_REPO)/$(DOCKER_IMAGE):$(VERSION) $(TEMP_DIR)
